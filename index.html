@@ -11,8 +11,21 @@
     <svg width="500" height="500">
       <circle id="circle" r="30" cx="50" cy="50" fill="red" />
       <animate xlink:href="#circle" attributeName="cy" from="50" to="450"
-      dur="2s" begin="click" fill="freeze" values="50; 450; 350; 450"
-      keyTimes="0; 0.5; 0.7; 1"
+      dur="2s" begin="click" fill="freeze" 
+      calcMode="spline" 
+      values="50; 450;
+      120; 450; 170; 450; 250; 450; 400" keyTimes=" 0; 0.15; 0.3; 0.4; 0.45;
+      0.6; 0.75; 0.9; 1" 
+      keySplines=" 
+      0.42 0 1 1; 
+      0 0 0.59 1; 
+      0.42 0 1 1; 
+      0 0 0.59 1; 
+      0.42 0 1 1; 
+      0 0 0.59 1; 
+      0.42 0 1 1; 
+      0 0 0.59 1; 
+  "
     </svg>
   </body>
 </html>
